@@ -1,0 +1,161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;   
+}
+/* the background -------------------------------------------------------------------------------------------------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-image: linear-gradient(rgba(53, 47, 51, 0.5),rgba(180, 178, 174, 0.6)),url(bank\ photo.jpg);/* Add background with transparent layer on it*/
+    background-size: cover;/*ensure  background covers  all the area (even if we need to crop it)*/
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*make sure that background doesn't move if we scroll down*/
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/* Create container(div) for the data */
+div.container{
+    width: 30%;
+    height: 50%;
+    background-color: rgba(15, 14, 15, 0.9);
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ======================================================================================================================= */
+/*=============================================================================================*/
+/* (1)- Logo Styling */
+div.logo{
+    width: 100%; 
+    height: 33.3%; /* so the logo area only take one third of the full area */
+
+    position: absolute;
+    top: 0;
+    
+    transform: translateX(-50%,-50%);
+    /* background-color: rgb(201, 95, 95,0.5);  */
+    /*_________________________________________________*/
+    /*To center a image in a div*/
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    
+}
+
+/*Style the logo inside the div __________________________________________*/
+img{ 
+    width: 178px;
+    height: 140px;
+}
+
+/*=============================================================================================*/
+/* (2)- Form Styling */
+div.form-container {
+    width: 100%; 
+    height: 66.66%; /* so it take two thrids of the full div */
+
+    position: absolute;
+    top: 33.3%; /* leave the first third to the logo*/
+    
+    transform: translateX(-50%,-50%);
+    /* background-color: rgba(173, 173, 173, 0.541); */
+    /*_________________________________________________*/
+    /*To center elements a div*/
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    
+    flex-direction: column;
+}
+/* /*=============================================================================================*/ 
+/* style the input and botton */
+input{
+    /*Style the input box*/
+    width: 75%;
+    height: 10%;
+    border:  3px solid rgb(92, 92, 92);
+
+    padding: 1%;
+    margin: 20px;
+
+    /*style the placeholder*/
+    font-size: 100%;
+    font-family: FontSquirrel Matcherator;
+}
+
+button{
+    width: 50%;
+    height: 10%;
+    border:  3px solid rgb(92, 92, 92);
+
+    font-size:80%;
+    font-family: FontSquirrel Matcherator;
+    
+    padding: auto;
+    margin: 10px;
+
+    text-align: center; 
+    cursor: pointer;
+}
+/*=============================================================================================*/ 
+/*=============================================================================================*/ 
+/* here we can adjust the ratio so the interface fit mobile-phones as well */
+@media(max-width:700px){
+    /* style the blcak main container */
+    div.container{
+        width: 50%;
+        height: 50%;
+        background-color: rgba(15, 14, 15, 0.9);
+        border-radius: 20px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* ---------------------------------------------------------------- */
+    /* style the image size */
+    img{ 
+    width: 60px;
+    height: 50px;
+    }
+    /* ---------------------------------------------------------------- */
+    /* style the input and botton */
+    input{
+        /*Style the input box*/
+        width: 70%;
+        height: 15px;
+        border:  1px solid rgb(92, 92, 92);
+
+        padding: 1%;
+        margin: 12px;
+
+        /*style the placeholder*/
+        font-size: 50%;
+        font-family: FontSquirrel Matcherator;
+    }
+
+    button{
+        width:  60%;
+        height: 17px;
+        border:  1px solid rgb(92, 92, 92);
+
+        font-size:50%;
+        font-family: FontSquirrel Matcherator;
+        
+        padding: auto;
+        margin: 10px;
+
+        cursor: pointer;
+    }
+
+
+}
