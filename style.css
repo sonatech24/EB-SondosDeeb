@@ -18,12 +18,12 @@ body{
     background-attachment: fixed;/*make sure that background doesn't move if we scroll down*/
 }
 /*-------------------------------------------------------------------------------------------------------------------------*/
-/* Create container(div) for the data */
 div.container{
-    width: 30%;
-    height: 50%;
-    background-color: rgba(15, 14, 15, 0.9);
+    width: 40%;
+    height: 60%;
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+
 
     position: absolute;
     top: 50%;
@@ -54,6 +54,8 @@ div.logo{
 img{ 
     width: 178px;
     height: 140px;
+
+    margin: 20px;
 }
 
 /*=============================================================================================*/
@@ -74,6 +76,21 @@ div.form-container {
     align-items: center;     /* Center vertically */
     
     flex-direction: column;
+}
+/* ------------------------------------------------------------------ */
+/* use this so we have equal spaces between inputs and button */
+.form{
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+button.form {
+    text-align: center;
+    padding: 10px; /* Adjust this to control the button size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* /*=============================================================================================*/ 
 /* style the input and botton */
@@ -135,9 +152,6 @@ button{
         height: 15px;
         border:  1px solid rgb(92, 92, 92);
 
-        padding: 1%;
-        margin: 12px;
-
         /*style the placeholder*/
         font-size: 50%;
         font-family: FontSquirrel Matcherator;
@@ -150,11 +164,21 @@ button{
 
         font-size:50%;
         font-family: FontSquirrel Matcherator;
-        
-        padding: auto;
-        margin: 10px;
-
         cursor: pointer;
+    }
+
+    .form{
+    margin: 20px;
+    padding: 10px;
+        
+    }
+
+    button.form {
+        text-align: center;
+        padding: 10px; /* Adjust this to control the button size */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
